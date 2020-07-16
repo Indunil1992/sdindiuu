@@ -11,15 +11,16 @@
         "isRemovable": true,
         "filePath": "sdindiuu.js",
         "cursor": {
-          "lineNumber": 2,
-          "column": 5
+          "lineNumber": 1,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs8",
           "timeout": 60,
           "memory": 128,
           "triggerType": 0,
-          "name": "sdindiuu"
+          "name": "sdindiuu",
+          "handler": "handler"
         },
         "triggers": [
           {
@@ -55,6 +56,16 @@
         "children": [],
         "isRemovable": false,
         "filePath": "main.py"
+      },
+      "0f1eea8e-0589-4cd3-a624-6ab9b964156e": {
+        "id": "0f1eea8e-0589-4cd3-a624-6ab9b964156e",
+        "parent": null,
+        "name": "Authorizer.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Authorizer.js"
       }
     },
     "openFiles": [
@@ -66,6 +77,35 @@
         "name": "http-trigger",
         "type": "http-trigger",
         "config": {}
+      },
+      "ddbChineseAnimal": {
+        "name": "ddbChineseAnimal",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:263248768798:table/ChineseAnimal",
+            "name": "ChineseAnimal",
+            "partitionKey": "BirthYear",
+            "partitionKeyType": "N",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 1
+          }
+        }
+      },
+      "pubsubcloudBuilds": {
+        "name": "pubsubcloudBuilds",
+        "type": "CloudPubSub",
+        "config": {
+          "mode": 1,
+          "topic": {
+            "name": "cloud-builds",
+            "subscriptions": []
+          }
+        }
       }
     },
     "customTemplate": {
@@ -74,9 +114,57 @@
       "dialect": null,
       "definitions": null
     },
-    "envVariables": [],
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_DEFAULT_REGION",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_ACCESS_KEY_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_SECRET_ACCESS_KEY",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": false,
+          "notRemovable": false
+        },
+        "googleapis": {
+          "name": "googleapis",
+          "language": "nodejs",
+          "version": "29.0.0",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -87,8 +175,10 @@
     "projectRegion": "us-east1",
     "platform": "GCP",
     "language": "nodejs",
-    "platformRegions": {},
-    "lastSave": 1594873917918
+    "platformRegions": {
+      "AWS": "us-east-1"
+    },
+    "lastSave": 1594874690056
   },
   "VCS_STATE": {
     "provider": "GitHub",
