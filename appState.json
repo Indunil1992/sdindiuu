@@ -1,0 +1,100 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ff850bc5-accd-4d0b-9ca6-d4ca4ccae5a0": {
+        "id": "ff850bc5-accd-4d0b-9ca6-d4ca4ccae5a0",
+        "parent": null,
+        "name": "sdindiuu.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sdindiuu.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "name": "sdindiuu"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "6e9b6c19-f275-4feb-8977-ee1c6f09e74c": {
+            "id": "6e9b6c19-f275-4feb-8977-ee1c6f09e74c",
+            "functionId": "ff850bc5-accd-4d0b-9ca6-d4ca4ccae5a0",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      },
+      "1fcc50c1-7f66-4f65-9e7b-9ec553eb1327": {
+        "id": "1fcc50c1-7f66-4f65-9e7b-9ec553eb1327",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js"
+      },
+      "b924c3d5-e223-4b71-b79e-84feba8ee6ec": {
+        "id": "b924c3d5-e223-4b71-b79e-84feba8ee6ec",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py"
+      }
+    },
+    "openFiles": [
+      "ff850bc5-accd-4d0b-9ca6-d4ca4ccae5a0"
+    ],
+    "currentFileId": "ff850bc5-accd-4d0b-9ca6-d4ca4ccae5a0",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.1",
+    "projectName": "sdindiuu",
+    "projectDescription": "My First Project",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1594873917918
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sdindiuu",
+      "url": "https://github.com/Indunil1992/sdindiuu"
+    }
+  }
+}
